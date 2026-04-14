@@ -1,0 +1,71 @@
+.container {
+  padding: 30px 20px;
+  background: #111;
+  color: white;
+  min-height: 100vh;
+  max-width: 600px;
+  margin: auto;
+}
+
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid red;
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .container h1,p {
+    padding: 8px 16px;
+    margin-top: 16px;
+}
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+}

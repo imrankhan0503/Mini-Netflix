@@ -1,0 +1,20 @@
+Project Plan – Mini Netflix Website
+
+I will build a multi-page React application inspired by Netflix. The goal is to allow users to browse movies, view details, 
+and explore categories using the TMDB API.
+
+The website will include four main top-level routes:
+
+Home page: Featuring popular, top-rated, and upcoming movies.
+
+Movies page: Including sub-routes for specific genres (Action and Romance).
+
+About page: Project information.
+
+Contact us page
+
+I will use React Router to handle navigation. A Layout component with <Outlet /> will be used to keep the Header and Footer consistent.
+
+The project will use reusable components (MovieCard, Navigation, etc.) and Props to pass data. State (useState) and Effects (useEffect) will manage the API data fetching.
+
+For styling, I will use CSS Modules to ensure encapsulated and maintainable code. The project will be fully responsive for mobile and desktop views

@@ -1,0 +1,40 @@
+.fullPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.content img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.back {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 130px;
+  right: 26px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content img {
+    width: 100%;
+  }
+}

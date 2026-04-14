@@ -1,0 +1,7 @@
+.button {
+  background: red;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
