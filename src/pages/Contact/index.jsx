@@ -1,6 +1,12 @@
 import styles from "./contact.module.css"
 
 const Contact = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    alert("Form submitted successfully!")
+  }
+
   return (
     <div className={styles.container}>
 
@@ -10,27 +16,29 @@ const Contact = () => {
         If you have any questions about this project, feel free to contact us.
       </p>
 
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={handleSubmit}>
 
-        <input 
-          type="text" 
-          placeholder="Your Name" 
-          required 
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
         />
 
-        <input 
-          type="email" 
-          placeholder="Your Email" 
-          required 
+        <input
+          type="email"
+          placeholder="Your Email"
+          required
         />
 
-        <textarea 
+        <textarea
           placeholder="Your Message"
-          rows="5"
+          rows={5}
           required
         ></textarea>
 
-        <button type="submit">Send Message</button>
+        <button type="submit">
+          Send Message
+        </button>
 
       </form>
 
