@@ -36,8 +36,8 @@ const Contact = () => {
           required
         ></textarea>
 
-        <button type="submit">
-          Send Message
+        <button onClick={handleSubmit}>
+         Send Message
         </button>
 
       </form>
