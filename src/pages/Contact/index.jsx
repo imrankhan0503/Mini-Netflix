@@ -16,7 +16,7 @@ const Contact = () => {
         If you have any questions about this project, feel free to contact us.
       </p>
 
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={styles.form}>
 
         <input
           type="text"
